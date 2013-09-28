@@ -1,12 +1,5 @@
-{% extends 'layout.html' %}
+{% extends 'default/layout.html' %}
 
-{% block content %}
-<div class="row">
-    <div class="main col-md-9">
-        <h1>首页</h1>
-    </div><!-- End .main -->
-    <div class="sidebar col-md-3">
-        {% include 'default/sidebar.html' %}
-    </div><!-- End .sidebar -->
-</div><!-- End .row -->
-{% endblock content %}
+{% block main %}
+<h1>首页</h1>
+{% endblock main %}
