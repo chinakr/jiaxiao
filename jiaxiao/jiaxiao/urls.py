@@ -2,6 +2,7 @@
 
 from django.conf.urls import patterns, include, url
 from home.url_dispatch import URLDispatchView
+from home.rss import RSSView
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -17,6 +18,7 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     # url(r'^admin/', include(admin.site.urls)),
-    url(r'^$', URLDispatchView.as_view()),
-    url(r'^(?P<page_name>\w+)/$', URLDispatchView.as_view()),
+    url(r'^$', URLDispatchView.as_view(), name='index'),
+    url(r'^rss/$', RSSView.as_view(), name='rss_feed'),
+    url(r'^(?P<page_name>\w+)/$', URLDispatchView.as_view(), name='channels'),
 )
