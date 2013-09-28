@@ -13,6 +13,7 @@ class URLDispatchView(View):
         """URL GET"""
 
         if page_name == '':
-            #page_name = 'index'
-            return render(request, 'default/index.html')
-        return HttpResponse(page_name)
+            page_name = 'index'
+        template_name = 'default/%s.html' % page_name
+        #return HttpResponse(page_name)
+        return render(request, template_name)
