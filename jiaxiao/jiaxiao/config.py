@@ -12,3 +12,5 @@ channels = [
     {'name': u'联系方式', 'name_en': 'contact'},
     {'name': u'常见问题', 'name_en': 'faq'},
 ]
+
+theme = 'haijia'

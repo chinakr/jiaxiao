@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="{% static 'css/global.css' %}" />
 <script src="{% static 'js/jquery-2.0.3.min.js' %}"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
-{% include 'head.html' %}
+{% block head %}{% include 'head.html' %}{% endblock %}
 </head>
 <body>
 <div class="container">
@@ -27,6 +27,6 @@
         {% block footer %}{% include 'default/footer.html' %}{% endblock %}
     </div><!-- End .footer -->
 </div><!-- End .container -->
-{% include 'foot.html' %}
+{% block foot %}{% include 'foot.html' %}{% endblock %}
 </body>
 </html>

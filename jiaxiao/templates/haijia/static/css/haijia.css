@@ -1,0 +1,22 @@
+div.header {
+    padding-top: 2px;
+    background: transparent url('/static/img/logo.jpg') no-repeat 0 22px;
+}
+div.header div.navbar {
+    margin-top: 230px;
+    border: 0;
+    border-radius: 0;
+}
+div.header div.navbar-default {
+    background-color: #76A1CC;
+}
+div.header div.navbar-default li a {
+    color: white;
+    font-size: 1.25em;
+}
+div.header div.navbar-default li a:hover {
+    background-color: white;
+}
+div.header div.navbar-default div.navbar-header {
+    display: none;
+}
