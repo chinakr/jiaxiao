@@ -5,6 +5,7 @@
 from django.views.generic.base import View
 from django.http import HttpResponse
 from django.shortcuts import render
+from jiaxiao.config import site_name, channels
 
 class URLDispatchView(View):
     """URL映射"""
@@ -16,4 +17,7 @@ class URLDispatchView(View):
             page_name = 'index'
         template_name = 'default/%s.html' % page_name
         #return HttpResponse(page_name)
-        return render(request, template_name)
+        return render(request, template_name, {
+            'site_name': site_name,
+            'channels': channels,
+        })
