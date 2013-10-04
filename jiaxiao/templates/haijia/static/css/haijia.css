@@ -20,3 +20,8 @@ div.header div.navbar-default li a:hover {
 div.header div.navbar-default div.navbar-header {
     display: none;
 }
+
+div.header ul.nav li.current a {
+    background-color: #FFFFFF;
+    color: #333333;
+}

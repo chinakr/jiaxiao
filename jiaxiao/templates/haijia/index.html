@@ -1,5 +1,14 @@
 {% extends 'haijia/layout.html' %}
 
+{% block head %}
+{{ block.super }}
+<script>
+$(function() {
+    $('ul.nav li.index').addClass('current');
+});
+</script>
+{% endblock head %}
+
 {% block main %}
 <h1>首页</h1>
 {% endblock main %}
