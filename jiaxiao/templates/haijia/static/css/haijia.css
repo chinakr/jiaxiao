@@ -31,13 +31,54 @@ div.content h2 {
     font-size: 1.15em;
     font-weight: bold;
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
+/* 边栏 */
+div.sidebar h2 {
+    background-color: #EFEFEF;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+}
 div.sidebar div.section {
     border: 1px solid #CCCCCC;
     margin-bottom: 8px;
     padding-left: 10px;
+    padding-bottom: 0;
+    padding-right: 10px;
+}
+div.sidebar ul {
+    margin-left: 0;
+    padding: 0;
+    margin-right: 5px;
+}
+div.sidebar li {
+    list-style-type: none;
+    line-height: 175%;
+}
+div.sidebar .glyphicon {
+    margin-right: 5px;
+}
+div.sidebar span.decoration {
+    color: #888888;
+    margin-left: 3px;
+}
+
+/* 常用电话 */
+div.sidebar div.contact ul {
+    padding-right: 8px;
+}
+div.sidebar div.contact li {
+    text-align: right;
+}
+
+/* 常用链接 */
+div.sidebar div.links ul {
+    padding-right: 5px;
+}
+div.sidebar div.links li {
+    text-align: right;
 }
 
 /* 每日限行 */
@@ -46,7 +87,7 @@ div.restriction {
     background: transparent url('/static/img/restriction_2013-10-06.png') no-repeat -4px 0;
 }
 div.restriction h2 {
-    color: transparent;
+    display: none;
 }
 
 /* 网上摇号 */
