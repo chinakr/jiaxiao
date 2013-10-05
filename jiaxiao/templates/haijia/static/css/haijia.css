@@ -12,7 +12,7 @@ div.header div.navbar-default {
 }
 div.header div.navbar-default li a {
     color: white;
-    font-size: 1.25em;
+    font-size: 1.15em;
 }
 div.header div.navbar-default li a:hover {
     background-color: white;
@@ -21,7 +21,38 @@ div.header div.navbar-default div.navbar-header {
     display: none;
 }
 
+/* 导航栏高亮 */
 div.header ul.nav li.current a {
     background-color: #FFFFFF;
     color: #333333;
+}
+
+div.content h2 {
+    font-size: 1.15em;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+div.sidebar div.section {
+    border: 1px solid #CCCCCC;
+    margin-bottom: 8px;
+    padding-left: 10px;
+}
+
+/* 每日限行 */
+div.restriction {
+    height: 150px;
+    background: transparent url('/static/img/restriction_2013-10-06.png') no-repeat -4px 0;
+}
+div.restriction h2 {
+    color: transparent;
+}
+
+/* 网上摇号 */
+div.sidebar div.getting-license-number {
+    padding: 0;
+}
+div.getting-license-number h2 {
+    display: none;
 }

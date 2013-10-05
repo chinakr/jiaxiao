@@ -4,11 +4,23 @@
 {{ block.super }}
 <script>
 $(function() {
-    $('ul.nav li.index').addClass('current');
+    $('ul.nav li.index').addClass('current');    // 导航栏高亮
 });
 </script>
 {% endblock head %}
 
 {% block main %}
-<h1>首页</h1>
+<div class="introduction">
+    <!-- 驾校简介 -->
+    <p>北京市海淀区汽车驾驶学校简称海淀驾校，创建于1985年，是全国最早的汽车驾驶培训学校。海淀驾校位于颐和园西北10余公里，是海淀区区属大型企业，占地3000多亩。海淀驾校在国内机动车驾驶员培训行业中有着悠久的历史和显赫的地位。海淀驾校的隶属单位包括：北京市京海机动车驾驶员考试场和北京海驾汽车俱乐部。海淀驾校的培训对象包括：汽车驾驶员、摩托车驾驶员和拉力赛车手。成立至今，海淀驾校一直是北京市乃至全国最大的机动车驾驶员综合培训基地，海淀驾校的创建开辟了面向社会公众的机动车驾驶培训市场。</p>
+</div><!-- End .introduction -->
+<div class="comments">
+    <h2>学员评价</h2>
+</div><!-- End .comments -->
+<div class="price">
+    <h2>班型价格</h2>
+</div><!-- End .price -->
+<div class="apply">
+    <h2>网上报名</h2>
+</div><!-- End .apply -->
 {% endblock main %}
