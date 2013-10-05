@@ -10,17 +10,34 @@ $(function() {
 {% endblock head %}
 
 {% block main %}
-<div class="introduction">
+<div class="introduction section">
     <!-- 驾校简介 -->
-    <p>北京市海淀区汽车驾驶学校简称海淀驾校，创建于1985年，是全国最早的汽车驾驶培训学校。海淀驾校位于颐和园西北10余公里，是海淀区区属大型企业，占地3000多亩。海淀驾校在国内机动车驾驶员培训行业中有着悠久的历史和显赫的地位。海淀驾校的隶属单位包括：北京市京海机动车驾驶员考试场和北京海驾汽车俱乐部。海淀驾校的培训对象包括：汽车驾驶员、摩托车驾驶员和拉力赛车手。成立至今，海淀驾校一直是北京市乃至全国最大的机动车驾驶员综合培训基地，海淀驾校的创建开辟了面向社会公众的机动车驾驶培训市场。</p>
+    <p class="indent">北京市海淀区汽车驾驶学校简称海淀驾校，创建于1985年，是全国最早的汽车驾驶培训学校。海淀驾校位于颐和园西北10余公里，是海淀区区属大型企业，占地3000多亩。海淀驾校在国内机动车驾驶员培训行业中有着悠久的历史和显赫的地位。海淀驾校的隶属单位包括：北京市京海机动车驾驶员考试场和北京海驾汽车俱乐部。海淀驾校的培训对象包括：汽车驾驶员、摩托车驾驶员和拉力赛车手。成立至今，海淀驾校一直是北京市乃至全国最大的机动车驾驶员综合培训基地，海淀驾校的创建开辟了面向社会公众的机动车驾驶培训市场。</p>
 </div><!-- End .introduction -->
-<div class="comments">
+<div class="comments section">
     <h2>学员评价</h2>
 </div><!-- End .comments -->
-<div class="price">
+<div class="price section">
     <h2>班型价格</h2>
+    <table class="table table-bordered">
+    <thead>
+        <tr><th rowspan="2">班型</th><th rowspan="2">训练时间</th><th colspan="2">车型</th></tr>
+        <tr><th>比亚迪</th><th>桑塔纳</th></tr>
+    </thead>
+    <tbody>
+        <tr><td rowspan="2"><span class="highlight">速成班(C1)</span></td><td>周一至周五</td><td>￥4,850</td><td>￥5,050</td></tr>
+        <tr><td>周六、周日</td><td>￥5,650</td><td>￥5,850</td></tr>
+        <tr><td rowspan="2">计时班(C1)</td><td>周一至周五</td><td>￥4,600</td><td>￥4,800</td></tr>
+        <tr><td>周一至周日</td><td>￥5,000</td><td>￥5,200</td></tr>
+        <tr><td>自动挡(C2)</td><td>周一至周日</td><td colspan="2">￥4,700</td></tr>
+        <tr><td>特训班(C1/C2)</td><td>周一至周日</td><td colspan="2">￥8,000</td></tr>
+        <tr><td>贵宾班(C1/C2)</td><td>周一至周日</td><td colspan="2">￥15,800</td></tr>
+        <tr><td>摩托车</td><td>周一至周日</td><td colspan="2">￥1,300(二轮摩托车，E)<br/>￥1,800(三轮摩托车，D)</td></tr>
+    </tbody>
+    </table>
+    <p><span class="field">说明</span>：1) 均为单人单车；2) 均为全费；3) 速成班免约车；4) 特训班、贵宾班提前24小时预约保证用车。<a href="#" target="_blank"><span class="more">更多...</span></a></p>
 </div><!-- End .price -->
-<div class="apply">
+<div class="apply section">
     <h2>网上报名</h2>
 </div><!-- End .apply -->
 {% endblock main %}

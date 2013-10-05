@@ -1,3 +1,4 @@
+/* 页头 */
 div.header {
     padding-top: 2px;
     background: transparent url('/static/img/logo.jpg') no-repeat 0 22px;
@@ -27,6 +28,7 @@ div.header ul.nav li.current a {
     color: #333333;
 }
 
+/* 内容 */
 div.content h2 {
     font-size: 1.15em;
     font-weight: bold;
@@ -108,4 +110,38 @@ div.sidebar div.getting-license-number {
 }
 div.getting-license-number h2 {
     display: none;
+}
+
+/* 主要内容 */
+div.main p {
+    text-align: justify;
+    line-height: 175%;
+}
+div.main p.indent {
+    text-indent: 2em;
+}
+div.main h2 {
+    border-top: 1px solid #CCCCCC;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background: -webkit-gradient(linear, 0, 0, 0 100%, from(#CCCCCC), to(#444444));
+    background: -moz-linear-gradient(top, #EFEFEF, #666666);
+}
+div.main .section {
+    margin-bottom: 15px;
+}
+div.main span.highlight {
+    color: red;
+}
+div.main span.field {
+    font-weight: bold;
+}
+/* 班型价格 */
+div.main table th, div.main table td {
+    text-align: center;
+    vertical-align: middle;
+}
+div.main table {
+    margin-bottom: 10px;
 }
