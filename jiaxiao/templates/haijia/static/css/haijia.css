@@ -35,6 +35,11 @@ div.content h2 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+div.content img.float {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
 
 /* 边栏 */
 div.sidebar h2 {
