@@ -1,0 +1,50 @@
+{% extends 'haijia/layout.html' %}
+
+{% block title %}海淀驾校中关村报名中心 | 海淀驾校报名处, 海淀驾校报名点, 海淀驾校官方网站{% endblock %}
+
+{% block head %}
+{{ block.super }}
+<script>
+$(function() {
+    $('ul.nav li.contact').addClass('current');    // 导航栏高亮
+});
+</script>
+{% endblock head %}
+
+{% block main %}
+<ol class="breadcrumb">
+    您的位置：
+    <li><a href="/">海淀驾校</a></li>
+    <li class="active">联系方式</li>
+</ol>
+<div class="center-contact section">
+    <h2>海淀驾校中关村报名中心</h2>
+    <p class="indent">海淀驾校中关村报名中心位于中关村南路中关村88号(中关村医院正对面)，公共交通十分便利，可乘坐地铁4号线到中关村站下车，C2出口出，或乘坐公交302/307/320区/355/365/466/601/697/699/718/731/731区/特4/特6/运通105/运通106/运通205路到中关村南站下车。工人日报社到海淀驾校的班车的乘车点就在海淀驾校中关村报名中心门口。海淀驾校中关村报名中心的营业时间为周一至周日早8:00至晚18:00，办公电话是010-62567057。满意在海驾，海淀驾校欢迎您的到来！</p>
+</div><!-- End .center-contact -->
+<div class="center-pic section">
+    <div class="row">
+        <div class="col-md-4">
+            <a class="thumbnail"><img src="/static/img/haijia_center_outside.jpg" alt="海淀驾校报名中心" /></a>
+        </div>
+        <div class="col-md-4">
+            <a class="thumbnail"><img src="/static/img/haijia_center_inside.jpg" alt="海淀驾校现场报名" /></a>
+        </div>
+        <div class="col-md-4">
+            <a class="thumbnail"><img src="/static/img/haijia_center_director.jpg" alt="海淀驾校报名中心主任" /></a>
+        </div>
+    </div><!-- End .row -->
+</div><!-- End .center-pic -->
+<div class="center-map section">
+    <p class="center"><img class="img-thumbnail" src="/static/img/haijia_center_map.jpg" alt="海淀驾校报名中心地址" /></p>
+</div><!-- End .center-map -->
+<div class="haijia-contact">
+    <h2>海淀驾校联系电话</h2>
+    <ul>
+        <li><span class="glyphicon glyphicon-earphone"></span> 报名电话：010-6256 7057</li>
+        <li><span class="glyphicon glyphicon-time"></span> 班车咨询：010-6245 4612，010-6249 5780</li>
+        <li><span class="glyphicon glyphicon-book"></span> 法培咨询：010-6249 5512，010-6249 5537</li>
+        <li><span class="glyphicon glyphicon-arrow-right"></span> 手续咨询：010-6248 0975，010-6248 0976</li>
+        <li><span class="glyphicon glyphicon-user"></span> 投诉电话：010-6245 4547</li>
+    </ul>
+</div><!-- End .haijia-contact -->
+{% endblock main %}

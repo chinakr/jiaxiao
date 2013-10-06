@@ -136,6 +136,15 @@ div.main li {
     text-align: justify;
     line-height: 175%;
 }
+div.main ul {
+    padding-left: 15px;
+}
+div.main ul li {
+    list-style-type: none;
+}
+div.main ul li span.glyphicon {
+    margin-right: 5px;
+}
 div.main p.indent {
     text-indent: 2em;
 }
