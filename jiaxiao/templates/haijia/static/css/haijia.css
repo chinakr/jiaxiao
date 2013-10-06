@@ -55,6 +55,7 @@ div.sidebar div.section {
     padding-left: 10px;
     padding-bottom: 0;
     padding-right: 10px;
+    border-radius: 4px;
 }
 div.sidebar ul {
     margin-left: 0;
@@ -157,6 +158,16 @@ div.main div.comment div.meta {
     margin-bottom: 10px;
     padding: 5px;
     border-radius: 4px;
+}
+div.main div.comment div.meta span.author {
+    font-weight: bold;
+    margin-right: 20px;
+}
+div.main div.comment div.meta span.date {
+    color: #888888;
+}
+div.main div.comment p {
+    text-indent: 2em;
 }
 /* 班型价格 */
 div.main table th, div.main table td {
