@@ -39,71 +39,99 @@ $(function() {
         </div><!-- End .table-responsive -->
     <p><span class="field">说明</span>：1) 均为单人单车；2) 均为全费；3) 速成班免约车；4) 特训班、贵宾班提前24小时预约保证用车。<a href="#" target="_blank"><span class="more">更多...</span></a></p>
 </div><!-- End .price -->
+{% endblock main %}
+
+{% block content %}
+{{ block.super }}
+        <div class="row">
+    <div class="col-md-12">
+<h2 class="section">网上报名</h2>
+    </div><!-- End .col-md-12 -->
+    <div class="col-md-7">
 <div class="apply section">
-    <h2>网上报名</h2>
     <form class="form-inline" role="form">
         <table class="table table-condesed">
-        <tr>
-            <th><label class="control-label" for="name">姓名</label></th>
-            <td class="name"><input type="text" class="form-control" id="name" placeholder="请输入您的姓名" /></td>
-            <th><label class="control-label" for="gender">性别</label></th>
-            <td>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="gender" id="gender" value="male" checked="checked" />
-                        男
-                    </label>
-                </div><!-- End .radio -->
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="gender" id="gender" value="female" />
-                        女
-                    </label>
-                </div><!-- End .radio -->
-            </td>
-        </tr>
-        <tr>
-            <th><label class="control-label" for="mobile">联系电话</label></th>
-            <td><input type="text" class="form-control" id="mobile" placeholder="请输入您的手机号" /></td>
-            <th><label class="control-label" for="for">提交目的</label></th>
-            <td>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="for" id="for" value="apply" />
-                        报名
-                    </label>
-                </div><!-- End .radio -->
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="for" id="for" value="consult" checked="checked" />
-                        咨询
-                    </label>
-                </div><!-- End .radio -->
-                <span class="number"><label class="control-label" for="number">人数</label><input type="text" class="form-control number" id="number" />人</span>
-            </td>
-        </tr>
-        <tr>
-            <th><label class="control-label" for="type">报考车型</label></th>
-            <td>
-                <select class="form-control">
-                    <option default="default">C1(手动挡)</option>
-                    <option>C2(自动挡)</option>
-                    <option>摩托车</option>
-                </select>
-            </td>
-            <th><label class="control-label" for="address">住址</label></th>
-            <td><input type="text"  class="form-control" id="address" placeholder="请输入您的地址" /></td>
-        </tr>
-    </div><!-- End .form-group -->
-        <tr>
-            <th><label class="control-label" for="note">报名备注</label></th>
-            <td colspan="3"><textarea class="form-control" rows="3"></textarea></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td colspan="3"><button type="submit" class="btn btn-default btn-primary">提交</button></td>
-        </tr>
+        <tbody>
+            <tr>
+                <th><label class="control-label" for="name">姓名</label></th>
+                <td class="name"><input type="text" class="form-control" id="name" placeholder="请输入您的姓名" /></td>
+                <th><label class="control-label" for="gender">性别</label></th>
+                <td>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="gender" id="gender" value="male" checked="checked" />
+                            男
+                        </label>
+                    </div><!-- End .radio -->
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="gender" id="gender" value="female" />
+                            女
+                        </label>
+                    </div><!-- End .radio -->
+                </td>
+            </tr>
+            <tr>
+                <th><label class="control-label" for="mobile">电话</label></th>
+                <td><input type="text" class="form-control" id="mobile" placeholder="请输入您的手机号" /></td>
+                <th><label class="control-label" for="for">目的</label></th>
+                <td>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="for" id="for" value="apply" />
+                            报名
+                        </label>
+                    </div><!-- End .radio -->
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="for" id="for" value="consult" checked="checked" />
+                            咨询
+                        </label>
+                    </div><!-- End .radio -->
+                    <span class="number"><label class="control-label" for="number">人数</label><input type="text" class="form-control number" id="number" />人</span>
+                </td>
+            </tr>
+            <tr>
+                <th><label class="control-label" for="type">车型</label></th>
+                <td>
+                    <select class="form-control">
+                        <option default="default">C1(手动挡)</option>
+                        <option>C2(自动挡)</option>
+                        <option>摩托车</option>
+                    </select>
+                </td>
+                <th><label class="control-label" for="address">住址</label></th>
+                <td><input type="text"  class="form-control" id="address" placeholder="请输入您的地址" /></td>
+            </tr>
+            <tr>
+                <th><label class="control-label" for="note">备注</label></th>
+                <td colspan="3"><textarea class="form-control" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3"><button type="submit" class="btn btn-default btn-primary">提交</button></td>
+            </tr>
+        </tbody>
         </table>
     </form>
 </div><!-- End .apply -->
-{% endblock main %}
+    </div><!-- End .col-md-7 -->
+    <div class="col-md-5">
+<h2>北京海淀驾校报名</h2>
+<table class="table table-striped table-condensed">
+<thead>
+    <tr><th>姓名</th><th>目的</th><th>车型</th><th>电话</th><th>报名时间</th></tr>
+</thead>
+<tbody>
+    <tr><td>赵*</td><td>报名</td><td>C1</td><td>1352270****</td><td>2013-10-06</td></tr>
+    <tr><td>钱**</td><td>咨询</td><td>C1</td><td>1382270****</td><td>2013-10-05</td></tr>
+    <tr><td>孙*</td><td>报名</td><td>C1</td><td>1392270****</td><td>2013-10-04</td></tr>
+    <tr><td>李**</td><td>咨询</td><td>C1</td><td>1862270****</td><td>2013-10-04</td></tr>
+    <tr><td>周*</td><td>报名</td><td>C1</td><td>1892270****</td><td>2013-10-04</td></tr>
+    <tr><td>吴**</td><td>咨询</td><td>C1</td><td>1372270****</td><td>2013-10-03</td></tr>
+    <tr><td>郑*</td><td>报名</td><td>C1</td><td>1322270****</td><td>2013-10-03</td></tr>
+</tbody>
+</table>
+    </div><!-- End .col-md-5 -->
+        </div><!-- End .row -->
+{% endblock content %}
