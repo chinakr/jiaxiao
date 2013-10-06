@@ -123,6 +123,11 @@ div.getting-license-number h2 {
 }
 
 /* 主要内容 */
+div.main ol.breadcrumb {
+    background-color: transparent;
+    margin: 0 5px;
+    padding: 0;
+}
 div.main p {
     text-align: justify;
     line-height: 175%;
