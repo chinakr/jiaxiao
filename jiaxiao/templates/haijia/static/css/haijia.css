@@ -151,11 +151,13 @@ div.main table {
 /* 网上报名 */
 div.content div.apply th {
     text-align: right;
+    vertical-align: middle;
     border-top: 0;
     width: 10%;
 }
 div.content div.apply td {
     text-align: left;
+    vertical-align: middle;
     border-top: 0;
 }
 div.content div.apply td.name {
@@ -171,4 +173,27 @@ div.content div.apply span.number {
 }
 div.content div.apply div.radio {
     margin-bottom: 5px;
+}
+div.content div.apply th.note {
+    vertical-align: top;
+    padding-top: 10px;
+}
+
+/* 友情链接 */
+div.footer div.links p {
+    text-align: left;
+    float: left;
+}
+div.footer div.links span.field {
+    font-weight: bold;
+}
+div.footer div.links ul {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+div.footer div.links li {
+    float: left;
+    list-style-type: none;
+    margin-right: 10px;
 }
