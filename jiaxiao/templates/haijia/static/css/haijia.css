@@ -128,6 +128,7 @@ div.main p {
     line-height: 175%;
 }
 div.main li {
+    text-align: justify;
     line-height: 175%;
 }
 div.main p.indent {
@@ -143,6 +144,10 @@ div.main h2, div.content h2.section {
     border-radius: 4px;
     color: white;
     font-weight: normal;
+}
+div.main h3 {
+    font-size: 1em;
+    font-weight: bold;
 }
 div.main .section {
     margin-bottom: 15px;
