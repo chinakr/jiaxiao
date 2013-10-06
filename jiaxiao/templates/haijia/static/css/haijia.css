@@ -127,6 +127,9 @@ div.main p {
     text-align: justify;
     line-height: 175%;
 }
+div.main li {
+    line-height: 175%;
+}
 div.main p.indent {
     text-indent: 2em;
 }
