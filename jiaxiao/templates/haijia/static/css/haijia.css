@@ -40,6 +40,9 @@ div.content img.float {
     margin-right: 10px;
     margin-top: 5px;
 }
+div.content p.center {
+    text-align: center;
+}
 
 /* 边栏 */
 div.sidebar h2 {
