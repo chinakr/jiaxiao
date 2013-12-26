@@ -24,6 +24,6 @@ urlpatterns = patterns('',
     url(r'^$', URLDispatchView.as_view(), name='index'),
     url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': STATIC_ROOT}),
     url(r'^rss/$', RSSView.as_view(), name='rss_feed'),
-    url(r'^staticize/$', SiteStaticizeView.as_view()),
+    url(r'^staticize/$', SiteStaticizeView.as_view()),    # 生成静态网站
     url(r'^(?P<page_name>\w+)/$', URLDispatchView.as_view(), name='channels'),
 )
