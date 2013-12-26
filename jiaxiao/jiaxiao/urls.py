@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 from jiaxiao.settings import STATIC_ROOT
 from home.url_dispatch import URLDispatchView
 from home.rss import RSSView
+from home.staticize import SiteStaticizeView
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -23,5 +24,6 @@ urlpatterns = patterns('',
     url(r'^$', URLDispatchView.as_view(), name='index'),
     url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': STATIC_ROOT}),
     url(r'^rss/$', RSSView.as_view(), name='rss_feed'),
+    url(r'^staticize/$', SiteStaticizeView.as_view()),
     url(r'^(?P<page_name>\w+)/$', URLDispatchView.as_view(), name='channels'),
 )
