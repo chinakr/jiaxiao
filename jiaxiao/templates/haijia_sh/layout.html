@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% load staticfiles %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/haijia.css' %}" />
+{% endblock head %}
+
+{% block header %}
+{% include 'haijia_sh/header.html' %}
+{% endblock header %}
+
+{% block content %}
+<div class="row">
+    <div class="main col-md-9">
+        {% block main %}{% endblock %}
+    </div><!-- End .main -->
+    <div class="sidebar col-md-3">
+        {% include 'haijia_sh/sidebar.html' %}
+    </div><!-- End .sidebar -->
+</div><!-- End .row -->
+{% endblock content %}
+
+{% block footer %}
+{% include 'haijia_sh/footer.html' %}
+{% endblock %}

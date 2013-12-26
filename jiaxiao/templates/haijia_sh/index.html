@@ -1,0 +1,141 @@
+{% extends 'haijia_sh/layout.html' %}
+
+{% block title %}{{ site_name }} | 北京海淀驾校, 海驾, 海淀驾校官网{% endblock %}
+
+{% block head %}
+{{ block.super }}
+<script>
+$(function() {
+    $('ul.nav li.index').addClass('current');    // 导航栏高亮
+});
+</script>
+{% endblock head %}
+
+{% block main %}
+<div class="introduction section">
+    <!-- 驾校简介 -->
+    <img class="img-thumbnail float" src="/static/img/shuttlebus.jpg" alt="海淀驾校" />
+    <p class="indent">北京市海淀区汽车驾驶学校简称海淀驾校，创建于1985年，是全国最早的汽车驾驶培训学校。海淀驾校位于颐和园西北10余公里，是海淀区区属大型企业，占地3000多亩。海淀驾校在国内机动车驾驶员培训行业中有着悠久的历史和显赫的地位。海淀驾校的隶属单位包括京海机动车驾驶员考试场和海驾汽车俱乐部，培训对象包括汽车驾驶员和摩托车驾驶员。成立至今，海淀驾校一直是北京市乃至全国最大的机动车驾驶员综合培训基地，海淀驾校的创建开辟了面向社会公众的机动车驾驶培训市场。</p>
+</div><!-- End .introduction -->
+<div class="comments section">
+    <h2>学员评价</h2>
+    <div class="comment">
+        <div class="meta">
+            <span class="author">学员甲</span><span class="date">2013-06-28</span>
+        </div><!-- End .meta -->
+        <p>刚练完科目三，现在是一次模拟，三次上路，可以在手续大厅8号窗口约，也可以自己在机器上约，也是一下就把三次都约了。窗口给我约的7.1-4，我到机器上试了一下，约到了6.24，26，27，28，供参考。<a class="more" href="#" target="_blank">更多...</a></p>
+    </div><!-- End .comment -->
+    <div class="comment">
+        <div class="meta">
+            <span class="author">学员乙</span><span class="date">2013-06-25</span>
+        </div><!-- End .meta -->
+        <p>我的运气还不错，也是海驾速成班的，科目二的师傅脾气又好，也不要东西。科目二5节课我连一瓶水都没给他送过，刚开始练的不好也没骂过我。第一节课跑场地嘛，有个女小贩在车与车之间兜售水烟之类的，还让我给教练来包烟。<a class="more" href="#" target="_blank">更多...</a></p>
+    </div><!-- End .comment -->
+    <div class="comment">
+        <div class="meta">
+            <span class="author">学员丙</span><span class="date">2013-06-22</span>
+        </div><!-- End .meta -->
+        <p>海驾自动挡没有模拟器，都是直接上车的。我的上车训练时间次数，如下：科目二训练了8次，28个小时(晚上去了几次)。科目三训练了4次，16个小时(都是白天去的)。科目二集训一天，科目三集训半天。全部训练时间加起来，勉强接近50个学时，没吃什么亏！<a class="more" href="#" target="_blank">更多...</a></p>
+    </div><!-- End .comment -->
+</div><!-- End .comments -->
+<div class="price section">
+    <h2>班型价格</h2>
+    {% include 'haijia_sh/block_price.html' %}
+    <p><span class="field">说明</span>：1) 均为单人单车；2) 均为全费；3) 速成班免约车；4) 特训班、贵宾班提前24小时预约保证用车。<a href="#" target="_blank"><span class="more">更多...</span></a></p>
+</div><!-- End .price -->
+{% endblock main %}
+
+{% block content %}
+{{ block.super }}
+        <div class="row">
+    <div class="col-md-12">
+<h2 class="section">网上报名</h2>
+    </div><!-- End .col-md-12 -->
+    <div class="col-md-7">
+<div class="apply section">
+    <form class="form-inline" role="form">
+        <table class="table table-condesed">
+        <tbody>
+            <tr>
+                <th><label class="control-label" for="name">姓名</label></th>
+                <td class="name"><input type="text" class="form-control" id="name" placeholder="请输入您的姓名" /></td>
+                <th><label class="control-label" for="gender">性别</label></th>
+                <td>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="gender" id="gender" value="male" checked="checked" />
+                            男
+                        </label>
+                    </div><!-- End .radio -->
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="gender" id="gender" value="female" />
+                            女
+                        </label>
+                    </div><!-- End .radio -->
+                </td>
+            </tr>
+            <tr>
+                <th><label class="control-label" for="mobile">电话</label></th>
+                <td><input type="text" class="form-control" id="mobile" placeholder="请输入您的手机号" /></td>
+                <th><label class="control-label" for="for">目的</label></th>
+                <td>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="for" id="for" value="apply" />
+                            报名
+                        </label>
+                    </div><!-- End .radio -->
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="for" id="for" value="consult" checked="checked" />
+                            咨询
+                        </label>
+                    </div><!-- End .radio -->
+                    <span class="number"><label class="control-label" for="number">人数</label><input type="text" class="form-control number" id="number" />人</span>
+                </td>
+            </tr>
+            <tr>
+                <th><label class="control-label" for="type">车型</label></th>
+                <td>
+                    <select class="form-control">
+                        <option default="default">C1(手动挡)</option>
+                        <option>C2(自动挡)</option>
+                        <option>摩托车</option>
+                    </select>
+                </td>
+                <th><label class="control-label" for="address">住址</label></th>
+                <td><input type="text"  class="form-control" id="address" placeholder="请输入您的地址" /></td>
+            </tr>
+            <tr>
+                <th class="note"><label class="control-label" for="note">备注</label></th>
+                <td colspan="3"><textarea class="form-control" rows="3"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3"><button type="submit" class="btn btn-default btn-primary">提交</button></td>
+            </tr>
+        </tbody>
+        </table>
+    </form>
+</div><!-- End .apply -->
+    </div><!-- End .col-md-7 -->
+    <div class="col-md-5">
+<h2>北京海淀驾校报名</h2>
+<table class="table table-striped table-condensed">
+<thead>
+    <tr><th>姓名</th><th>目的</th><th>车型</th><th>电话</th><th>报名时间</th></tr>
+</thead>
+<tbody>
+    <tr><td>赵*</td><td>报名</td><td>C1</td><td>1352270****</td><td>2013-10-06</td></tr>
+    <tr><td>钱**</td><td>咨询</td><td>C1</td><td>1382270****</td><td>2013-10-05</td></tr>
+    <tr><td>孙*</td><td>报名</td><td>C1</td><td>1392270****</td><td>2013-10-04</td></tr>
+    <tr><td>李**</td><td>咨询</td><td>C1</td><td>1862270****</td><td>2013-10-04</td></tr>
+    <tr><td>周*</td><td>报名</td><td>C1</td><td>1892270****</td><td>2013-10-04</td></tr>
+    <tr><td>吴**</td><td>咨询</td><td>C1</td><td>1372270****</td><td>2013-10-03</td></tr>
+    <tr><td>郑*</td><td>报名</td><td>C1</td><td>1322270****</td><td>2013-10-03</td></tr>
+</tbody>
+</table>
+    </div><!-- End .col-md-5 -->
+        </div><!-- End .row -->
+{% endblock content %}

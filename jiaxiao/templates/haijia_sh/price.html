@@ -1,0 +1,53 @@
+{% extends 'haijia_sh/layout.html' %}
+
+{% block title %}海淀驾校价格 | 北京学车价格, 北京学车多少钱, 2013年学车价格{% endblock %}
+
+{% block head %}
+{{ block.super }}
+<script>
+$(function() {
+    $('ul.nav li.price').addClass('current');    // 导航栏高亮
+});
+</script>
+{% endblock head %}
+
+{% block main %}
+<ol class="breadcrumb">
+    您的位置：
+    <li><a href="/">海淀驾校</a></li>
+    <li class="active">学车价格</li>
+</ol>
+<div class="pricelist section">
+    <h2>北京海淀驾校2013年12月学车价格</h2>
+    {% include 'haijia/block_price.html' %}
+    <p><span class="field">海淀驾校报名电话</span>：<span class="highlight">010-61705049</span>，提供报名咨询服务和上门报名预约服务。</p>
+    <p><span class="field">海淀驾校报名地址</span>：北京市昌平区沙河高教新城北街家园五区2-1-232。</p>
+</div><!-- End .pricelist -->
+<div class="fast section">
+    <h2>海淀驾校速成班</h2>
+    <p class="indent">为满足部分学员秋季学车快速拿本的需求，海淀驾校决定开办2013年秋季快班(海淀驾校秋季班，海淀驾校秋季速成班)，细则如下：</p>
+    <ol>
+        <li>报名日期：7月19日开始</li>
+        <li>学费价格：4400元 (从报名到拿本全部费用)</li>
+        <li>培训车型：桑塔纳、爱丽舍、比亚迪 (学校随机安排)</li>
+        <li>训练时间：周一至周五 (连续训练，免约车)</li>
+        <li>培训周期：四个月</li>
+        <li>招生人数：2000人 (限量)</li>
+        <li>为保证您能在四个月的时间内顺利取得驾驶证，在您通过科目一考试后，请到第一读卡站办理上车手续并选择训练时间。计时大厅8号窗口负责为您解决学车过程中的相关问题。</li>
+        <li>您报名时请详细阅读报名须知。</li>
+    </ol>
+    <p class="indent"><span class="highlight">注：报名已截止，即日起恢复原价4850元。</span></p>
+</div><!-- End .fast -->
+<div class="normal section">
+    <h2>海淀驾校计时班</h2>
+    <p class="indent">计时班为单人单车，学员可自主选择训练时间。计时班训练时间为上午8:00～12:00，下午13:00～17:00，夏季晚段17:00～21:00。</p>
+</div><!-- End .normal -->
+<div class="vip section">
+    <h2>海淀驾校特训班及贵宾班</h2>
+    <p class="indent">贵宾班学员在东四环以内、南三环以内、石景山金顶街以东、昌平区北环以南区域内免费接送25次，提前24小时电话预约保证训练用车，每次约车时间不少于4学时。</p>
+</div><!-- End .vip -->
+<div class="motorcycle">
+    <h2>海淀驾校摩托车驾驶培训</h2>
+    <p class="indent">海淀驾校提供二轮摩托车驾驶证(E本)和三轮摩托车驾驶证(D本)培训，价格便宜，流程规范，通过率高，在北京摩托车迷中拥有极好的口碑。</p>
+</div><!-- End .motorcycle -->
+{% endblock main %}

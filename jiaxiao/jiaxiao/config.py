@@ -2,7 +2,7 @@
 
 """网站配置文件"""
 
-site_name = u'海淀驾校'
+site_name = u'海淀驾校沙河高教新城报名中心'
 
 channels = [
     {'name': u'驾校简介', 'name_en': 'introduction', 'title': u'北京市海淀区汽车驾驶学校'},
@@ -13,4 +13,5 @@ channels = [
     {'name': u'常见问题', 'name_en': 'faq'},
 ]
 
-theme = 'haijia'
+#theme = 'haijia'
+theme = 'haijia_sh'

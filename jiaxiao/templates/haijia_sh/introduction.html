@@ -1,0 +1,59 @@
+{% extends 'haijia_sh/layout.html' %}
+
+{% block title %}北京市海淀区汽车驾驶学校 | 海淀驾校地址, 京海车管所, 凤凰岭{% endblock %}
+
+{% block head %}
+{{ block.super }}
+<script>
+$(function() {
+    $('ul.nav li.introduction').addClass('current');    // 导航栏高亮
+});
+</script>
+{% endblock head %}
+
+{% block main %}
+<ol class="breadcrumb">
+    您的位置：
+    <li><a href="/">海淀驾校</a></li>
+    <li class="active">驾校简介</li>
+</ol>
+<div class="history section">
+    <h2>海淀驾校的历史</h2>
+    <p class="indent">北京市海淀区汽车驾驶学校简称海淀驾校，创建于1985年，是全国最早的汽车驾驶培训学校。海淀驾校位于颐和园西北10余公里，是海淀区区属大型企业，占地3000多亩。海淀驾校在国内机动车驾驶员培训行业中有着悠久的历史和显赫的地位。海淀驾校的隶属单位包括：北京市京海机动车驾驶员考试场和北京海驾汽车俱乐部。海淀驾校的培训对象包括：汽车驾驶员、摩托车驾驶员和拉力赛车手。成立至今，海淀驾校一直是北京市乃至全国最大的机动车驾驶员综合培训基地，海淀驾校的创建开辟了面向社会公众的机动车驾驶培训市场。</p>
+    <div class="row">
+        <div class="col-md-4">
+            <a class="thumbnail"><img src="/static/img/haijia.jpg" alt="北京海淀驾校" /></a>
+        </div>
+        <div class="col-md-4">
+            <a class="thumbnail"><img src="/static/img/playground.jpg" alt="海淀驾校教练车" /></a>
+        </div>
+        <div class="col-md-4">
+            <a class="thumbnail"><img src="/static/img/shuttlebus.jpg" alt="海淀驾校免费班车" /></a>
+        </div>
+    </div><!-- End .row -->
+</div><!-- End .history -->
+<div class="current section">
+    <h2>海淀驾校的现状</h2>
+    <p class="indent">海淀驾校经过二十多年的发展，现已拥有爱丽舍、桑塔纳、两轮及三轮摩托教练车近千辆。海淀驾校拥有全市最大的法规培训教学楼和先进的电教、考试设备。海淀驾校拥有训练科目齐全的训练场和独立的考试场，桩、路考场均有电脑监控，并为学员配备了专用考试车辆。学员在海淀驾校报名学车，从科目一到科目三的整个培训和考试过程都在海驾校内完成，流程规范，质量过硬。为方便学员参加培训，海淀驾校配备了数十辆免费班车，班车路线覆盖北京市区，方便快捷。海淀驾校对全单位团体报名的学员还提供专车接送。海淀驾校多次参与北京市机动车驾驶培训大纲和教材的编写，并承担着海淀区内近十所大小驾校的培训、考试和手续办理工作。</p>
+    <div class="row">
+        <div class="col-md-4">
+            <a class="thumbnail"><img src="/static/img/classroom.jpg" alt="海淀驾校交通法规培训" /></a>
+        </div>
+        <div class="col-md-4">
+            <a class="thumbnail"><img src="/static/img/exam.jpg" alt="海淀驾校科目一考试" /></a>
+        </div>
+        <div class="col-md-4">
+            <a class="thumbnail"><img src="/static/img/yueche.jpg" alt="海淀驾校现场约车" /></a>
+        </div>
+    </div><!-- End .row -->
+</div><!-- End .current -->
+<div class="honor section">
+    <h2>海淀驾校的荣誉</h2>
+    <p class="indent">质量第一，信誉至上，创一流服务，这是海淀驾校的办学宗旨。海淀驾校在多年的教学中总结出一套有效的教学经验，桩、路科目考试合格率一直在全市名列前茅。为规范内部管理，海淀驾校在2001年8月率先通过ISO9001:2000质量管理体系认证。2004年海淀驾校被北京市交管局评为“星级驾校”，同年被北京市评为“首都绿化美化花园式单位”和“首都文明单位”。海淀驾校始终以学员的需求为关注焦点，认真履行自己的社会责任。1995年海淀驾校成立北京海驾汽车俱乐部，并成为中国汽车运动联合会会员，为学员提供免费、收费的汽车陪练服务以及赛车手培训，同时拥有自己的赛车队伍。2002年海淀驾校按照国际标准独资建设超级短道汽车比赛场地，承办了2002至2004年全国汽车拉力锦标赛和“联合会”杯全国汽车挑战赛并取得骄人成绩。海淀驾校从2005年开始参加全国汽车场地锦标赛，为国内汽车运动的发展做出了重要贡献，也为为广大汽车爱好者提供了活动平台。</p>
+    <p class="center"><img class="img-thumbnail" src="/static/img/honor.jpg" alt="海淀驾校是北京市星级驾校" /></p>
+</div><!-- End .honor -->
+<div class="development section">
+    <h2>海淀驾校的发展</h2>
+    <p class="indent">2013年12月海淀驾校在沙河高教新城设立了海淀驾校沙河高教新城报名管理中心(简称海淀驾校沙河高教新城报名中心)，为周边高校和小区的海驾学员提供现场报名、上门报名和现场咨询服务。海淀驾校沙河高教新城报名中心位于北街家园五区2-1-232，公共交通十分便利，可乘坐地铁13号线到沙河高教园站下车。海淀驾校沙河高教新城报名中心的营业时间为周一至周日早8:00至晚18:00，办公电话是010-61705049。满意在海驾，海淀驾校永远欢迎您的到来！</p>
+</div><!-- End .development -->
+{% endblock main %}
