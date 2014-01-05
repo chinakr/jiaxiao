@@ -13,5 +13,4 @@ channels = [
     {'name': u'常见问题', 'name_en': 'faq'},
 ]
 
-#theme = 'haijia'
 theme = 'haijia_sh'
