@@ -1,6 +1,8 @@
 {% extends 'haijia_sh/layout.html' %}
 
-{% block title %}{{ site_name }} | 海淀驾校报名处, 海淀驾校报名点, 海淀驾校官方网站{% endblock %}
+{% load staticfiles %}
+
+{% block title %}海淀驾校中关村报名中心 | 海淀驾校报名处, 海淀驾校报名点, 海淀驾校官方网站{% endblock %}
 
 {% block head %}
 {{ block.super }}
@@ -21,22 +23,8 @@ $(function() {
     <h2>海淀驾校沙河高教新城报名中心</h2>
     <p class="indent">海淀驾校沙河高教新城报名中心位于北街家园五区2-1-232，公共交通十分便利，可乘坐地铁13号线到沙河高教园站下车。海淀驾校沙河高教新城报名中心的营业时间为周一至周日早8:00至晚18:00，办公电话是010-61705049。满意在海驾，海淀驾校永远欢迎您的到来！</p>
 </div><!-- End .center-contact -->
-<!--
-<div class="center-pic section">
-    <div class="row">
-        <div class="col-md-4">
-            <a class="thumbnail"><img src="/static/img/haijia_center_outside.jpg" alt="海淀驾校报名中心" /></a>
-        </div>
-        <div class="col-md-4">
-            <a class="thumbnail"><img src="/static/img/haijia_center_inside.jpg" alt="海淀驾校现场报名" /></a>
-        </div>
-        <div class="col-md-4">
-            <a class="thumbnail"><img src="/static/img/haijia_center_director.jpg" alt="海淀驾校报名中心主任" /></a>
-        </div>
-    </div>
-</div>--><!-- End .center-pic -->
 <div class="center-map section">
-    <p class="center"><img class="img-thumbnail img-responsive" src="/static/img/address.jpg" alt="海淀驾校报名中心地址" /></p>
+    <p class="center"><img class="img-thumbnail img-responsive" src="{% static 'img/address.jpg' %}" alt="海淀驾校报名中心地址" /></p>
 </div><!-- End .center-map -->
 <div class="haijia-contact">
     <h2>海淀驾校联系电话</h2>
